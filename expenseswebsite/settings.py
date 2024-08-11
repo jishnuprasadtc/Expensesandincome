@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
-import django_heroku
+# import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-m#vt_)+&fkde!rrgq4hu@*55wat3f8&8da&qwa$$h1e0$q=600
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -130,7 +130,7 @@ STATICFILE_DIRS=[BASE_DIR,'expenses/static']
 STATICROOT=BASE_DIR,'static'
 
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 
 # Default primary key field type
